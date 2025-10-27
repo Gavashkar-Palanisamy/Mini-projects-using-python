@@ -1,0 +1,40 @@
+Python Control Flow :
+Title: Fuel burn calculator
+
+Concept:
+Calculate total trip fuel based on distance, aircraft fuel flow rate, and reserve policy.
+This mimics how dispatchers and FMS calculate required trip fuel.
+
+Tech used :
+Language : pyhton
+Compiler : Visual Studio Code
+
+Logic Flow:
+Input:
+
+Distance (in nautical miles)
+Aircraft fuel burn rate (in kg/hr)
+Average ground speed (in knots)
+Reserve time (in minutes)
+
+Compute:
+Flight time = Distance / Ground Speed
+Trip fuel = Flight Time × Fuel Burn Rate
+Reserve fuel = (Reserve Time / 60) × Fuel Burn Rate
+Total fuel = Trip fuel + Reserve fuel
+
+Output:
+Display Trip Fuel, Reserve Fuel, and Total Fuel.	
+
+Sample Input :
+Enter distance (NM): 800
+Enter fuel burn rate (kg/hr): 600
+Enter average ground speed (knots): 400
+Enter reserve time (minutes): 45
+
+Sample output :
+--- Fuel Calculation Summary ---
+Flight Time      : 2.00 hr
+Trip Fuel        : 1200.00 kg
+Reserve Fuel     : 450.00 kg
+Total Required   : 1650.00 kg
