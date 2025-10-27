@@ -1,0 +1,44 @@
+Python Control Flow :
+Title: Largest of three numbers
+
+Concept:
+Basic Equation:
+CG=∑(Weight×Arm)∑WeightCG=∑Weight∑(Weight×Arm)
+This Python project calculates an aircraft’s **total weight** and **center of gravity (CG)**, ensuring it stays within the operational envelope.  
+It simulates the logic used in flight dispatch software and FMS systems.
+
+Steps:
+Take inputs for aircraft empty weight and CG.
+Add payload (crew, pax, cargo) and fuel.
+Calculate total weight and new CG.
+Verify limits (for example: within 20–35% MAC).
+
+Tech used :
+Language : pyhton
+Compiler : Visual Studio Code
+
+Logic Flow:
+- Calculates total weight and CG position.  
+- Supports crew, passenger, cargo, and fuel entries.  
+- Checks if CG is within defined limits.  
+- Modular and ready for extension (for different aircraft types).	
+
+Input :
+Enter Basic Empty Weight (kg): 3400
+Enter Empty CG (m): 3.1
+Enter total crew weight (kg): 180
+Enter crew arm (m): 2.5
+Enter total passenger weight (kg): 420
+Enter passenger arm (m): 3.3
+Enter total cargo weight (kg): 200
+Enter cargo arm (m): 4.0
+Enter fuel weight (kg): 500
+Enter fuel arm (m): 3.4
+
+Output :
+------ WEIGHT & BALANCE SUMMARY ------
+Total Weight     : 4700.00 kg
+Total Moment     : 15080.00 kg·m
+CG Position      : 3.21 m
+✅ CG within limits.
+---------------------------------------------
